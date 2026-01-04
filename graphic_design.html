@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Graphic Design | Ainul Najihah Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/an_white.png" rel="icon">
+    <link href="assets/img/an_purple.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1;800;1;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* --- Gaya untuk Kategori Graphic Design --- */
+        
+        .project-group {
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .project-image {
+            flex: 0 0 300px;
+            max-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .project-details {
+            flex: 1;
+        }
+        
+        .project-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #bb86fc;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .project-tech-stack h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .project-tech-stack h4 i {
+            color: #bb86fc;
+            font-size: 1.2rem;
+        }
+        
+        .project-tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tech-tag {
+            background: rgba(188, 140, 242, 0.2);
+            color: #bb86fc;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .tech-tag:hover {
+            background-color: rgba(188, 140, 242, 0.3);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 992px) {
+            .project-header {
+                flex-direction: column;
+            }
+            .project-image {
+                flex: 0 0 100%;
+                max-width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center light-background sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <!-- LOGO -->
+            <a href="index.html" class="logo d-flex align-items-center me-4">
+                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;">
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="web_dev.html">Web Development</a></li>
+                            <li><a href="app_dev.html">App Development</a></li>
+                            <li><a href="graphic_design.html" class="active">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Graphic Design Section -->
+        <section id="graphic-design" class="portfolio section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Graphic Design & Media</h2>
+                <p>A showcase of my creative and technical skills across various graphic design and video editing tools. This section highlights my ability to create compelling visual content, from professional branding to engaging social media graphics
+                    and motion videos.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Project 1: Adobe Premiere Pro -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/premier.jpg" alt="Adobe Premiere Pro">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Video Editing & Motion Graphics</h3>
+                            <p class="project-description">
+                                Proficient in Adobe Premiere Pro for creating high-quality video content. This includes editing raw footage, color grading, audio mixing, and adding motion graphics and titles. I use it to craft compelling narratives for promotional videos, event highlights,
+                                and social media content, ensuring a professional and polished final product that captures and retains audience attention.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">Adobe Premiere Pro</span>
+                                    <span class="tech-tag">After Effects</span>
+                                    <span class="tech-tag">Audition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Adobe Illustrator -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/ilustrator.jpg" alt="Adobe Illustrator">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Vector Graphics & Branding</h3>
+                            <p class="project-description">
+                                Skilled in using Adobe Illustrator to create scalable vector graphics, logos, icons, and complex illustrations. My work includes developing complete brand identity packages, from logo design to marketing collateral. I leverage Illustrator's precision
+                                and powerful toolset to produce clean, modern, and versatile designs that can be used across both print and digital platforms.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">Adobe Illustrator</span>
+                                    <span class="tech-tag">Vector Art</span>
+                                    <span class="tech-tag">Logo Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Adobe Photoshop -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/photoshop.jpg" alt="Adobe Photoshop">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Photo Editing & Digital Art</h3>
+                            <p class="project-description">
+                                Expert in Adobe Photoshop for photo retouching, manipulation, and digital painting. I use it to enhance photos, create complex composites, and design web-ready graphics. My skills include color correction, background removal, and creating realistic compositions
+                                that blend multiple elements seamlessly. This tool is essential for producing high-impact visuals for both web and print.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">Adobe Photoshop</span>
+                                    <span class="tech-tag">Photo Retouching</span>
+                                    <span class="tech-tag">Digital Art</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Canva -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/canva.jpg" alt="Canva">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Social Media & Marketing Graphics</h3>
+                            <p class="project-description">
+                                Adept at using Canva for rapid design of social media graphics, marketing materials, and presentations. I leverage its user-friendly interface and vast template library to create visually appealing content quickly. Canva is my go-to tool for producing
+                                consistent branding for social media campaigns, designing infographics, and creating professional-looking marketing assets with a fast turnaround time.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">Canva</span>
+                                    <span class="tech-tag">Social Media Graphics</span>
+                                    <span class="tech-tag">Infographics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Graphic Design Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright text-center">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">My Portfolio</strong> <span>All Rights Reserved<br></span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://www.facebook.com/ain.najihah.754/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ainul.njihah/#"><i class="bi bi-instagram"></i></a>
+                <a href="https://my.linkedin.com/in/ainul-najihah-6169ba305?trk=people-guest_people_search-card"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/ainulnjihah03"><i class="bi bi-github "></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

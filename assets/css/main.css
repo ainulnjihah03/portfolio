@@ -915,6 +915,28 @@ section,
     animation-delay: 2s;
 }
 
+
+/* Contoh susunan kedudukan ikon baru */
+
+.floating-card.learning {
+    position: absolute;
+    top: 10%;
+    /* Laraskan tinggi */
+    left: -10%;
+    /* Laraskan ke kiri atau kanan */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+
+/* Pastikan anda sudah ada styling umum untuk .floating-card */
+
 @media (max-width: 992px) {
     .hero .hero-image .floating-elements .floating-card {
         display: none;
@@ -2856,4 +2878,298 @@ section,
 
 .starter-section {
     /* Add your styles here */
+}
+
+
+/* Box Segi Empat Sama 1:1 */
+
+.timeline-img-wrapper.square-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    /* Rapatkan dengan teks */
+}
+
+.timeline-img-wrapper.square-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Jarak teks */
+
+.timeline-item h4 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.timeline-item p {
+    line-height: 1.4;
+    color: #ccc;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.hover-icon {
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover img {
+    transform: scale(1.1);
+}
+
+.category-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    font-size: 3rem;
+    color: #bb86fc;
+    margin-bottom: 15px;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.category-section {
+    display: none;
+}
+
+.category-section.active {
+    display: block;
+}
+
+.back-to-categories {
+    margin-bottom: 30px;
+    display: none;
+}
+
+.back-to-categories.show {
+    display: block;
+}
+
+.portfolio-categories {
+    display: block;
+}
+
+.portfolio-categories.hide {
+    display: none;
+}
+
+
+/* --- Styling for a Uniform Grid (Applied to High School & Certificates) --- */
+
+#highSchool-section .portfolio-item,
+#certificate-section .portfolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#highSchool-section .portfolio-card,
+#certificate-section .portfolio-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    /* Make all cards in a row the same height */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#highSchool-section .portfolio-card:hover,
+#certificate-section .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#highSchool-section .portfolio-img,
+#certificate-section .portfolio-img {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height for all images */
+    overflow: hidden;
+    position: relative;
+}
+
+#highSchool-section .portfolio-img img,
+#certificate-section .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This ensures images cover the area without being stretched */
+    transition: transform 0.3s ease;
+}
+
+#highSchool-section .portfolio-card:hover .portfolio-img img,
+#certificate-section .portfolio-card:hover .portfolio-img img {
+    transform: scale(1.05);
+}
+
+#highSchool-section .portfolio-info,
+#certificate-section .portfolio-info {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+    /* Allows the info section to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+#highSchool-section .portfolio-info h4,
+#certificate-section .portfolio-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#highSchool-section .portfolio-info p,
+#certificate-section .portfolio-info p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    /* Pushes the tags to the bottom */
+}
+
+
+/* --- PERUBAHAN DI SINI --- */
+
+#highSchool-section .portfolio-tags,
+#certificate-section .portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    /* Membenarkan tag bergerak ke baris seterusnya */
+    gap: 5px;
+    /* Jarak yang sekata antara tag */
+    align-items: flex-start;
+    margin-top: auto;
+    min-height: 32px;
+    /* KETINGGIAN MINIMUM untuk menyamakan saiz */
+}
+
+#highSchool-section .portfolio-tags span,
+#certificate-section .portfolio-tags span {
+    background: rgba(188, 140, 242, 0.2);
+    color: #bb86fc;
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 15px;
+    /* 'margin-right' telah dibuang kerana kita gunakan 'gap' */
+}
+
+.category-group {
+    margin-bottom: 50px;
+    /* Ruang antara kategori */
+}
+
+.category-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #bb86fc;
+    /* Guna warna aksen ungu */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(188, 140, 242, 0.3);
+    /* Garis bawah yang halus */
+}
+
+.category-description {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 250px;
+    /* KETINGGIAN TETAP untuk semua gambar */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    /* ISI KETINGGIAN BEKAS */
+    object-fit: cover;
+    /* PASTIKAN GAMBAR TIDAK TERPINTIR DAN MEMENUHI RUANG */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay a {
+    color: white;
+    font-size: 1.5rem;
 }

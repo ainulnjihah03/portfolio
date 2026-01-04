@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Web Development | Ainul Najihah Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/an_white.png" rel="icon">
+    <link href="assets/img/an_purple.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* --- Gaya untuk Kategori Web Development --- */
+        
+        .project-group {
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .project-image {
+            flex: 0 0 400px;
+            /* Lebar tetap untuk gambar */
+            max-width: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .project-details {
+            flex: 1;
+        }
+        
+        .project-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #bb86fc;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .project-tech-stack h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .project-tech-stack h4 i {
+            color: #bb86fc;
+            font-size: 1.2rem;
+        }
+        
+        .project-tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tech-tag {
+            background: rgba(188, 140, 242, 0.2);
+            color: #bb86fc;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .tech-tag:hover {
+            background-color: rgba(188, 140, 242, 0.3);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 992px) {
+            .project-header {
+                flex-direction: column;
+            }
+            .project-image {
+                flex: 0 0 100%;
+                max-width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center light-background sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <!-- LOGO -->
+            <a href="index.html" class="logo d-flex align-items-center me-4">
+                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;">
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="web_dev.html" class="active">Web Development</a></li>
+                            <li><a href="app_dev.html">App Development</a></li>
+                            <li><a href="graphic_design.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Web Development Section -->
+        <section id="web-dev" class="portfolio section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Web Development Projects</h2>
+                <p>A showcase of my full-stack web development projects, demonstrating my ability to build functional, user-friendly, and scalable web applications from concept to deployment.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Project 1: ELI-Inbound UTHM -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/eli_system.jpg" alt="ELI-Inbound UTHM System">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">ELI-Inbound UTHM</h3>
+                            <p class="project-description">
+                                A comprehensive internship management system designed for Universiti Tun Hussein Onn Malaysia (UTHM). This platform streamlines the entire process for external students seeking internships, from application and submission of required documents to tracking
+                                and approval by faculty. It provides a centralized portal for students to discover opportunities and for the university to manage placements efficiently, fostering a seamless connection between academia and industry.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: PKK File Management -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/pkk_system.jpg" alt="PKK File Management System">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">PKK File Management System</h3>
+                            <p class="project-description">
+                                An internal system developed to digitize and manage the flow of incoming and outgoing official documents. This system replaces manual paper-based processes, allowing for secure uploading, tracking, and archiving of files. It features role-based access
+                                control, ensuring that only authorized personnel can view or manage sensitive documents, thereby enhancing security, efficiency, and accountability in administrative operations.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Inventory Bakery Management -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/workshop_system.jpg" alt="Inventory Bakery Management System">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Inventory Bakery Management System</h3>
+                            <p class="project-description">
+                                A desktop application tailored for bakeries to manage their stock, sales, and ingredients efficiently. Built with C++ for high performance, this system allows for real-time tracking of inventory levels, automated alerts for low-stock items, and sales
+                                reporting. It helps bakery owners reduce waste, optimize purchasing, and make data-driven decisions to improve profitability and operational workflow.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">C++</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Smart Nenas Platform -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/smart_system.jpg" alt="Smart Nenas Platform">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Smart Nenas Platform</h3>
+                            <p class="project-description">
+                                A comprehensive web platform designed to support the pineapple industry, from farm to table. It integrates modules for farmer registration, pineapple trading, and sales management. The platform facilitates direct communication between farmers and buyers,
+                                provides market price analytics, and offers a transparent and efficient supply chain. It aims to modernize the pineapple business by leveraging technology for better yield and profitability.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Hardware Deployment Coordination System -->
+                <div class="project-group">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/journey/hadecs_system.jpg" alt="Hardware Deployment Coordination System">
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Hardware Deployment Coordination System</h3>
+                            <p class="project-description">
+                                An internal coordination system designed to streamline hardware installation projects. Administrators can create and assign deployment tasks to various vendors for different sites. The system allows vendors to update task status in real-time, and administrators
+                                can monitor overall project progress. It improves communication, ensures accountability, and provides a clear overview of all deployment activities, leading to more efficient project completion and resource management.
+                            </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /Web Development Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright text-center">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">My Portfolio</strong> <span>All Rights Reserved<br></span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://www.facebook.com/ain.najihah.754/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ainul.njihah/#"><i class="bi bi-instagram"></i></a>
+                <a href="https://my.linkedin.com/in/ainul-najihah-6169ba305?trk=people-guest_people_search-card"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/ainulnjihah03"><i class="bi bi-github "></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

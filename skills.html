@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ainul Najihah | Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/an_white.png" rel="icon">
+    <link href="assets/img/an_purple.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+        /* Add a small hover effect to the tech icons */
+        
+        .hover-icon {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        
+        .hover-icon:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 8px #7e57c2);
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center light-background sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo d-flex align-items-center me-4">
+                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Projects</span> 
+                        <i class="bi bi-chevron-down toggle-dropdown"></i>
+                    </a>
+                        <ul>
+                            <li><a href="web_dev.html">Web Development</a></li>
+                            <li><a href="app_dev.html">App Development</a></li>
+                            <li><a href="graphic_design.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2 style="color: #bc8cf2;">Technical Skills</h2>
+                <p> With hands-on experience in multiple programming languages, development tools, and creative software, I can handle diverse technical requirements from concept to deployment.</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row justify-content-center g-5">
+
+                    <!-- Service 1: Web Development -->
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="bi bi-window-stack"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Web Development</h3>
+                                <p>Building responsive websites with modern web technologies and frameworks.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#webDevModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Programming & Software Development -->
+                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Programming & Software Development</h3>
+                                <p>Creating robust applications with various programming languages and IDEs.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#programmingModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Network & Security -->
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+                            <div class="service-content">
+                                <h3>Network & Security</h3>
+                                <p>Network simulation, protocol analysis, and security testing tools.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#networkModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span><i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Mobile Development -->
+                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="bi bi-phone-vibrate"></i></div>
+                            <div class="service-content">
+                                <h3>Mobile Development</h3>
+                                <p>Developing cross-platform mobile applications with modern frameworks.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#mobileDevModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span><i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Database Management -->
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="bi bi-database-fill-check"></i></div>
+                            <div class="service-content">
+                                <h3>Database Management</h3>
+                                <p>Designing and managing secure database systems with various technologies.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#dbModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span><i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Data Analytics -->
+                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+                            <div class="service-content">
+                                <h3>Data Analytics</h3>
+                                <p>Transforming data into insights using analytics and visualization tools.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#bigDataModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span><i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 7: UI/UX Design -->
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="bi bi-bezier2"></i></div>
+                            <div class="service-content">
+                                <h3>UI/UX Design</h3>
+                                <p>Creating intuitive designs and system architecture diagrams.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#uiuxModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span><i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 8: Multimedia Production -->
+                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="bi bi-palette-fill"></i></div>
+                            <div class="service-content">
+                                <h3>Multimedia Production</h3>
+                                <p>Creating professional visual content with Adobe Creative Suite.</p>
+                                <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#multimediaModal" style="color: #bc8cf2; font-weight: 600;">
+                                    <span>View Details</span><i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Services Section -->
+
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="copyright text-center ">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">My Porfolio</strong> <span>All Rights Reserved<br></span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://www.facebook.com/ain.najihah.754/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ainul.njihah/#"><i class="bi bi-instagram"></i></a>
+                <a href="https://my.linkedin.com/in/ainul-najihah-6169ba305?trk=people-guest_people_search-card"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/ainulnjihah03"><i class="bi bi-github "></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Modal 1: Web Development -->
+    <div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="webDevModalLabel" style="color: #bc8cf2; font-weight: 700; letter-spacing: 1px;">Web Development Tech Stack</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4">Technologies I use for building modern, responsive web applications.</p>
+
+                    <div class="row g-4">
+                        <!-- HTML5 -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55" alt="HTML5" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">HTML5</p>
+                        </div>
+                        <!-- CSS3 -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" alt="CSS3" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">CSS3</p>
+                        </div>
+                        <!-- JS -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" alt="JS" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">JavaScript</p>
+                        </div>
+                        <!-- PHP -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="55" alt="PHP" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">PHP</p>
+                        </div>
+                        <!-- Bootstrap -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55" alt="Bootstrap" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">Bootstrap</p>
+                        </div>
+                        <!-- Laravel -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="55" alt="Laravel" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">Laravel</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-top border-secondary text-start">
+                        <h6 style="color: #bc8cf2; font-weight: 600;">Expertise:</h6>
+                        <ul class="text-white-50" style="font-size: 14px; line-height: 1.8;">
+                            <li>Creating <strong>Responsive Layouts</strong> with CSS Grid, Flexbox, and Bootstrap</li>
+                            <li>Back-end development with <strong>PHP and Laravel</strong> framework</li>
+                            <li>Dynamic web applications with <strong>JavaScript</strong></li>
+                            <li>Modern web development best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Programming & Software Development -->
+    <div class="modal fade" id="programmingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2; font-weight: 700;">Programming & Software Development</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4">Programming languages and development environments I work with.</p>
+                    <div class="row g-4">
+                        <!-- C++ -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="55" alt="C++" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">C++</p>
+                        </div>
+                        <!-- Java -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="55" alt="Java" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">Java</p>
+                        </div>
+                        <!-- VS Code -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="55" alt="VS Code" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">VS Code</p>
+                        </div>
+                        <!-- Visual Studio -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="55" alt="Visual Studio" class="hover-icon">
+                            <p class="mt-2" style="font-size: 13px;">Visual Studio</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50">
+                        <h6 style="color: #bc8cf2; font-weight: 600;">Skills:</h6>
+                        <ul>
+                            <li><strong>C++:</strong> System-level programming and software logic</li>
+                            <li><strong>Java:</strong> Object-oriented programming and application development</li>
+                            <li><strong>VS Code:</strong> Lightweight, versatile development environment</li>
+                            <li><strong>Visual Studio:</strong> Comprehensive IDE for complex projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Network & Security -->
+    <div class="modal fade" id="networkModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2; font-weight: 700;">Network & Security Tools</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4">Network simulation, analysis, and security testing tools.</p>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Packet Tracer -->
+                        <div class="col-4 col-md-4">
+                            <div class="icon-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" alt="Packet Tracer">
+                            </div>
+                            <p class="mt-2">Packet Tracer</p>
+                        </div>
+
+                        <!-- Wireshark -->
+                        <div class="col-4 col-md-4">
+                            <div class="icon-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Wireshark_icon.svg" alt="Wireshark">
+                            </div>
+                            <p class="mt-2">Wireshark</p>
+                        </div>
+
+                        <!-- OWASP ZAP -->
+                        <div class="col-4 col-md-4">
+                            <div class="icon-box">
+                                <img src="https://owasp.org/assets/images/logo.png" alt="OWASP ZAP">
+                            </div>
+                            <p class="mt-2">OWASP ZAP</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50">
+                        <h6 style="color: #bc8cf2; font-weight: 600;">Capabilities:</h6>
+                        <ul>
+                            <li><strong>Packet Tracer:</strong> Network simulation and configuration practice</li>
+                            <li><strong>Wireshark:</strong> Network protocol analysis and troubleshooting</li>
+                            <li><strong>OWASP ZAP:</strong> Web application security vulnerability scanning</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Mobile Development -->
+    <div class="modal fade" id="mobileDevModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2; font-weight: 700;">Mobile Development Tech Stack</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4">Technologies for building cross-platform mobile applications.</p>
+                    <div class="row g-4">
+                        <!-- Flutter -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="50" class="hover-icon">
+                            <p class="mt-2 small">Flutter</p>
+                        </div>
+                        <!-- Dart -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="50" class="hover-icon">
+                            <p class="mt-2 small">Dart</p>
+                        </div>
+                        <!-- Firebase -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="50" class="hover-icon">
+                            <p class="mt-2 small">Firebase</p>
+                        </div>
+                        <!-- Android -->
+                        <div class="col-4 col-md-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="50" class="hover-icon">
+                            <p class="mt-2 small">Android SDK</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50 small">
+                        <h6 style="color: #bc8cf2; font-weight: 600;">Experience:</h6>
+                        <ul>
+                            <li><strong>Flutter & Dart:</strong> Cross-platform app development</li>
+                            <li><strong>Firebase:</strong> Backend services and real-time database</li>
+                            <li><strong>Android SDK:</strong> Native Android development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Database Management -->
+    <div class="modal fade" id="dbModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2;">Database Tech Stack</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4">Database systems and server environments I work with.</p>
+                    <div class="row g-4">
+                        <div class="col-4 col-md-4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60" class="hover-icon">
+                            <p class="mt-2">MySQL</p>
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="60" class="hover-icon">
+                            <p class="mt-2">Oracle</p>
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="60" class="hover-icon">
+                            <p class="mt-2">XAMPP</p>
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="60" class="hover-icon">
+                            <p class="mt-2">Laragon</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50">
+                        <h6 style="color: #bc8cf2; font-weight: 600;">Skills:</h6>
+                        <ul>
+                            <li><strong>MySQL & Oracle:</strong> Relational database design and management</li>
+                            <li><strong>XAMPP:</strong> Local server environment for development</li>
+                            <li><strong>Laragon:</strong> Modern development environment</li>
+                            <li>SQL query optimization and database administration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Data Analytics -->
+    <div class="modal fade" id="bigDataModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2;">Data Analytics Tech Stack</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4">Tools for data analysis, visualization, and machine learning.</p><br>
+                    <div class="row g-4">
+                        <!-- 2. Gunakan kod ini dalam HTML anda -->
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <img src="assets/img/services/power_bi.png" width="50">
+                                <p class="mt-2">Power BI</p>
+                            </div>
+                            <div class="col-4">
+                                <img src="assets/img/services/excel.png" width="50">
+                                <p class="mt-2">Excel</p>
+                            </div>
+                            <div class="col-4">
+                                <!-- Weka biasanya tiada di iconify, kita guna link PNG yang stabil -->
+                                <img src="assets/img/services/weka.png" width="50" class="hover-icon">
+                                <p class="mt-2">WEKA</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg " width="50 " class="hover-icon ">
+                            <p class="mt-2 ">Python</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg " width="50 " class="hover-icon ">
+                            <p class="mt-2 ">R</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50 ">
+                        <h6 style="color: #bc8cf2; font-weight: 600; ">Expertise:</h6>
+                        <ul>
+                            <li><strong>Power BI:</strong> Interactive dashboards and business intelligence</li>
+                            <li><strong>Excel:</strong> Advanced data analysis and financial modeling</li>
+                            <li><strong>WEKA:</strong> Machine learning and data mining</li>
+                            <li><strong>Python & R:</strong> Statistical analysis and data science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: UI/UX Design -->
+    <div class="modal fade" id="uiuxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content " style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px; ">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2; ">UI/UX Design Tools</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="text-white-50 mb-4 ">Design and diagramming tools for creating user interfaces and system architectures.</p>
+                    <div class="row g-4 ">
+                        <div class="col-4 col-md-4 ">
+                            <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg " width="50 " class="hover-icon ">
+                            <p class="mt-2 ">Canva</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/drawio.png" width="50" class="hover-icon">
+                            <p class="mt-2 ">Draw.io</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg " width="40 " class="hover-icon ">
+                            <p class="mt-2 ">Figma</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/staruml.png" width="50" class="hover-icon">
+                            <p class="mt-2 ">StarUML</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50 ">
+                        <h6 style="color: #bc8cf2; font-weight: 600; ">Skills:</h6>
+                        <ul>
+                            <li><strong>Draw.io:</strong> System architecture and flowchart diagrams</li>
+                            <li><strong>Canva:</strong> Graphic design and visual content creation</li>
+                            <li><strong>Figma:</strong> UI/UX prototyping and design</li>
+                            <li><strong>StarUML:</strong> UML diagramming for software design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Multimedia Production -->
+    <div class="modal fade" id="multimediaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #121212; color: white; border: 2px solid #7e57c2; border-radius: 15px;">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" style="color: #bc8cf2;">Multimedia Production</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center ">
+                    <p class="text-white-50 mb-4 ">Adobe Creative Suite and video editing tools for multimedia production.</p>
+                    <div class="row g-4 ">
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/photoshop.png" width="50" class="hover-icon">
+                            <p class="mt-2 ">Photoshop</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/illustrator.png" width="50" class="hover-icon">
+                            <p class="mt-2 ">Illustrator</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/premiere.png" width="50" class="hover-icon">
+                            <p class="mt-2 ">Premiere Pro</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/lightroom.png" width="50" class="hover-icon">
+                            <p class="mt-2 ">Lightroom</p>
+                        </div>
+                        <div class="col-4 col-md-4 ">
+                            <img src="assets/img/services/capcut.jpg" width="50" class="hover-icon">
+                            <p class="mt-2 ">CapCut</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary text-start text-white-50 ">
+                        <h6 style="color: #bc8cf2; font-weight: 600; ">Expertise:</h6>
+                        <ul>
+                            <li><strong>Photoshop:</strong> Photo editing and digital art</li>
+                            <li><strong>Illustrator:</strong> Vector graphics and logo design</li>
+                            <li><strong>Premiere Pro:</strong> Professional video editing</li>
+                            <li><strong>Lightroom:</strong> Photo management and editing</li>
+                            <li><strong>CapCut:</strong> Quick video editing for social media</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/typed.js/typed.umd.js "></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js "></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>
