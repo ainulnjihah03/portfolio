@@ -50,7 +50,7 @@
 
             <!-- LOGO -->
             <a href="index.html" class="logo d-flex align-items-center me-4">
-                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;">
+                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;" loading="eager" decoding="async">
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -84,8 +84,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2 style="color: #bc8cf2;">Technical Skills</h2>
-                <p> With hands-on experience in multiple programming languages, development tools, and creative software, I can handle diverse technical requirements from concept to deployment.</p>
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools used across my development projects, academic work, and technical support experience.</p>
             </div>
             <!-- End Section Title -->
 
@@ -102,6 +102,7 @@
                             <div class="service-content">
                                 <h3>Web Development</h3>
                                 <p>Building responsive websites with modern web technologies and frameworks.</p>
+                                <div class="skill-tag-list" aria-label="Web development technologies"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Bootstrap</span><span>Joomla</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#webDevModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span>
                                     <i class="bi bi-arrow-right"></i>
@@ -119,6 +120,7 @@
                             <div class="service-content">
                                 <h3>Programming & Software Development</h3>
                                 <p>Creating robust applications with various programming languages and IDEs.</p>
+                                <div class="skill-tag-list" aria-label="Programming languages"><span>JavaScript</span><span>PHP</span><span>Java</span><span>C++</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#programmingModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span>
                                     <i class="bi bi-arrow-right"></i>
@@ -134,6 +136,7 @@
                             <div class="service-content">
                                 <h3>Network & Security</h3>
                                 <p>Network simulation, protocol analysis, and security testing tools.</p>
+                                <div class="skill-tag-list" aria-label="Network and security tools"><span>Packet Tracer</span><span>Wireshark</span><span>OWASP ZAP</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#networkModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span><i class="bi bi-arrow-right"></i>
                                 </button>
@@ -148,6 +151,7 @@
                             <div class="service-content">
                                 <h3>Mobile Development</h3>
                                 <p>Developing cross-platform mobile applications with modern frameworks.</p>
+                                <div class="skill-tag-list" aria-label="Mobile development technologies"><span>Android Studio</span><span>Flutter</span><span>Java</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#mobileDevModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span><i class="bi bi-arrow-right"></i>
                                 </button>
@@ -162,6 +166,7 @@
                             <div class="service-content">
                                 <h3>Database Management</h3>
                                 <p>Designing and managing secure database systems with various technologies.</p>
+                                <div class="skill-tag-list" aria-label="Database technologies"><span>SQL</span><span>MySQL</span><span>Oracle</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#dbModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span><i class="bi bi-arrow-right"></i>
                                 </button>
@@ -176,6 +181,7 @@
                             <div class="service-content">
                                 <h3>Data Analytics</h3>
                                 <p>Transforming data into insights using analytics and visualization tools.</p>
+                                <div class="skill-tag-list" aria-label="Data analytics tools"><span>WEKA</span><span>Data Analysis</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#bigDataModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span><i class="bi bi-arrow-right"></i>
                                 </button>
@@ -190,6 +196,7 @@
                             <div class="service-content">
                                 <h3>UI/UX Design</h3>
                                 <p>Creating intuitive designs and system architecture diagrams.</p>
+                                <div class="skill-tag-list" aria-label="Interface design tools"><span>Figma</span><span>StarUML</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#uiuxModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span><i class="bi bi-arrow-right"></i>
                                 </button>
@@ -204,6 +211,7 @@
                             <div class="service-content">
                                 <h3>Multimedia Production</h3>
                                 <p>Creating professional visual content with Adobe Creative Suite.</p>
+                                <div class="skill-tag-list" aria-label="Multimedia tools"><span>Illustrator</span><span>Photoshop</span><span>Premiere Pro</span><span>Canva</span></div>
                                 <button type="button" class="btn service-link border-0 bg-transparent p-0" data-bs-toggle="modal" data-bs-target="#multimediaModal" style="color: #bc8cf2; font-weight: 600;">
                                     <span>View Details</span><i class="bi bi-arrow-right"></i>
                                 </button>
@@ -255,32 +263,32 @@
                     <div class="row g-4">
                         <!-- HTML5 -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55" alt="HTML5" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55" alt="HTML5" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">HTML5</p>
                         </div>
                         <!-- CSS3 -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" alt="CSS3" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" alt="CSS3" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">CSS3</p>
                         </div>
                         <!-- JS -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" alt="JS" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" alt="JS" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">JavaScript</p>
                         </div>
                         <!-- PHP -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="55" alt="PHP" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="55" alt="PHP" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">PHP</p>
                         </div>
                         <!-- Bootstrap -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55" alt="Bootstrap" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55" alt="Bootstrap" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">Bootstrap</p>
                         </div>
                         <!-- Laravel -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="55" alt="Laravel" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="55" alt="Laravel" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">Laravel</p>
                         </div>
                     </div>
@@ -312,22 +320,22 @@
                     <div class="row g-4">
                         <!-- C++ -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="55" alt="C++" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="55" alt="C++" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">C++</p>
                         </div>
                         <!-- Java -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="55" alt="Java" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="55" alt="Java" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">Java</p>
                         </div>
                         <!-- VS Code -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="55" alt="VS Code" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="55" alt="VS Code" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">VS Code</p>
                         </div>
                         <!-- Visual Studio -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="55" alt="Visual Studio" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="55" alt="Visual Studio" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2" style="font-size: 13px;">Visual Studio</p>
                         </div>
                     </div>
@@ -360,7 +368,7 @@
                         <!-- Packet Tracer -->
                         <div class="col-4 col-md-4">
                             <div class="icon-box">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" alt="Packet Tracer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" alt="Packet Tracer" loading="lazy" decoding="async">
                             </div>
                             <p class="mt-2">Packet Tracer</p>
                         </div>
@@ -368,7 +376,7 @@
                         <!-- Wireshark -->
                         <div class="col-4 col-md-4">
                             <div class="icon-box">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Wireshark_icon.svg" alt="Wireshark">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Wireshark_icon.svg" alt="Wireshark" loading="lazy" decoding="async">
                             </div>
                             <p class="mt-2">Wireshark</p>
                         </div>
@@ -376,7 +384,7 @@
                         <!-- OWASP ZAP -->
                         <div class="col-4 col-md-4">
                             <div class="icon-box">
-                                <img src="https://owasp.org/assets/images/logo.png" alt="OWASP ZAP">
+                                <img src="https://owasp.org/assets/images/logo.png" alt="OWASP ZAP" loading="lazy" decoding="async">
                             </div>
                             <p class="mt-2">OWASP ZAP</p>
                         </div>
@@ -409,22 +417,22 @@
                     <div class="row g-4">
                         <!-- Flutter -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="50" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 small">Flutter</p>
                         </div>
                         <!-- Dart -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="50" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 small">Dart</p>
                         </div>
                         <!-- Firebase -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="50" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 small">Firebase</p>
                         </div>
                         <!-- Android -->
                         <div class="col-4 col-md-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="50" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 small">Android SDK</p>
                         </div>
                     </div>
@@ -453,19 +461,19 @@
                     <p class="text-white-50 mb-4">Database systems and server environments I work with.</p>
                     <div class="row g-4">
                         <div class="col-4 col-md-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2">MySQL</p>
                         </div>
                         <div class="col-4 col-md-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="60" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="60" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2">Oracle</p>
                         </div>
                         <div class="col-4 col-md-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="60" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="60" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2">XAMPP</p>
                         </div>
                         <div class="col-4 col-md-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="60" class="hover-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="60" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2">Laragon</p>
                         </div>
                     </div>
@@ -497,25 +505,25 @@
                         <!-- 2. Gunakan kod ini dalam HTML anda -->
                         <div class="row text-center">
                             <div class="col-4">
-                                <img src="assets/img/services/power_bi.png" width="50">
+                                <img src="assets/img/services/power_bi.png" width="50" loading="lazy" decoding="async">
                                 <p class="mt-2">Power BI</p>
                             </div>
                             <div class="col-4">
-                                <img src="assets/img/services/excel.png" width="50">
+                                <img src="assets/img/services/excel.png" width="50" loading="lazy" decoding="async">
                                 <p class="mt-2">Excel</p>
                             </div>
                             <div class="col-4">
                                 <!-- Weka biasanya tiada di iconify, kita guna link PNG yang stabil -->
-                                <img src="assets/img/services/weka.png" width="50" class="hover-icon">
+                                <img src="assets/img/services/weka.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                                 <p class="mt-2">WEKA</p>
                             </div>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg " width="50 " class="hover-icon ">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg " width="50 " class="hover-icon " loading="lazy" decoding="async">
                             <p class="mt-2 ">Python</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg " width="50 " class="hover-icon ">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg " width="50 " class="hover-icon " loading="lazy" decoding="async">
                             <p class="mt-2 ">R</p>
                         </div>
                     </div>
@@ -545,19 +553,19 @@
                     <p class="text-white-50 mb-4 ">Design and diagramming tools for creating user interfaces and system architectures.</p>
                     <div class="row g-4 ">
                         <div class="col-4 col-md-4 ">
-                            <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg " width="50 " class="hover-icon ">
+                            <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg " width="50 " class="hover-icon " loading="lazy" decoding="async">
                             <p class="mt-2 ">Canva</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/drawio.png" width="50" class="hover-icon">
+                            <img src="assets/img/services/drawio.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">Draw.io</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg " width="40 " class="hover-icon ">
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg " width="40 " class="hover-icon " loading="lazy" decoding="async">
                             <p class="mt-2 ">Figma</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/staruml.png" width="50" class="hover-icon">
+                            <img src="assets/img/services/staruml.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">StarUML</p>
                         </div>
                     </div>
@@ -587,23 +595,23 @@
                     <p class="text-white-50 mb-4 ">Adobe Creative Suite and video editing tools for multimedia production.</p>
                     <div class="row g-4 ">
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/photoshop.png" width="50" class="hover-icon">
+                            <img src="assets/img/services/photoshop.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">Photoshop</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/illustrator.png" width="50" class="hover-icon">
+                            <img src="assets/img/services/illustrator.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">Illustrator</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/premiere.png" width="50" class="hover-icon">
+                            <img src="assets/img/services/premiere.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">Premiere Pro</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/lightroom.png" width="50" class="hover-icon">
+                            <img src="assets/img/services/lightroom.png" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">Lightroom</p>
                         </div>
                         <div class="col-4 col-md-4 ">
-                            <img src="assets/img/services/capcut.jpg" width="50" class="hover-icon">
+                            <img src="assets/img/services/capcut.jpg" width="50" class="hover-icon" loading="lazy" decoding="async">
                             <p class="mt-2 ">CapCut</p>
                         </div>
                     </div>

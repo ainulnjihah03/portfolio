@@ -129,6 +129,12 @@
                 height: 300px;
             }
         }
+
+        @media (min-width: 993px) {
+            .project-group:nth-of-type(even) .project-header {
+                flex-direction: row-reverse;
+            }
+        }
     </style>
 </head>
 
@@ -138,7 +144,7 @@
         <div class="container position-relative d-flex align-items-center justify-content-between">
             <!-- LOGO -->
             <a href="index.html" class="logo d-flex align-items-center me-4">
-                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;">
+                <img src="assets/img/an_logo.png" alt="Logo" style="height: 65px;" loading="eager" decoding="async">
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
@@ -172,18 +178,22 @@
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <!-- Project 1: ELI-Inbound UTHM -->
-                <div class="project-group">
+                <div class="project-group" id="project-digital-archive">
                     <div class="project-header">
-                        <div class="project-image">
-                            <img src="assets/img/portfolio/journey/eli_system.jpg" alt="ELI-Inbound UTHM System">
+                        <div class="project-image project-image--showcase">
+                            <a href="assets/img/portfolio/journey/psm%20project.png" class="glightbox" aria-label="View degree final-year project image">
+                                <img src="assets/img/portfolio/journey/psm%20project.png" alt="Degree final-year project demonstration of the Unified Digital Archiving System" loading="lazy" decoding="async">
+                            </a>
+                            <span class="image-caption">Project exhibition showcase</span>
                         </div>
                         <div class="project-details">
-                            <h3 class="project-title">ELI-Inbound UTHM</h3>
-                            <p class="project-description">
-                                A comprehensive internship management system designed for Universiti Tun Hussein Onn Malaysia (UTHM). This platform streamlines the entire process for external students seeking internships, from application and submission of required documents to tracking
-                                and approval by faculty. It provides a centralized portal for students to discover opportunities and for the university to manage placements efficiently, fostering a seamless connection between academia and industry.
-                            </p>
+                            <p class="project-kicker">Degree final-year project</p>
+                            <h3 class="project-title">Unified Digital Archiving System with Automated Document Classification</h3>
+                            <p class="project-description">For my degree final-year project, I am developing a centralized web-based system for storing, organizing, and retrieving digital documents. Its automated classification feature helps sort records and makes document management more efficient.</p>
+                            <details class="project-highlights">
+                                <summary>Key features</summary>
+                                <ul><li>Automated document classification</li><li>Digital document management</li><li>Web-based archive access</li></ul>
+                            </details>
                             <div class="project-tech-stack">
                                 <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
                                 <div class="project-tech-list">
@@ -198,18 +208,21 @@
                     </div>
                 </div>
 
-                <!-- Project 2: PKK File Management -->
-                <div class="project-group">
+                <div class="project-group" id="project-tiga-d-cuci-cuci">
                     <div class="project-header">
                         <div class="project-image">
-                            <img src="assets/img/portfolio/journey/pkk_system.jpg" alt="PKK File Management System">
+                            <a href="assets/img/portfolio/journey/cuci%20services.png" class="glightbox" aria-label="View Tiga D Cuci-Cuci Services website image">
+                                <img src="assets/img/portfolio/journey/cuci%20services.png" alt="Tiga D Cuci-Cuci Services business website" loading="lazy" decoding="async">
+                            </a>
                         </div>
                         <div class="project-details">
-                            <h3 class="project-title">PKK File Management System</h3>
-                            <p class="project-description">
-                                An internal system developed to digitize and manage the flow of incoming and outgoing official documents. This system replaces manual paper-based processes, allowing for secure uploading, tracking, and archiving of files. It features role-based access
-                                control, ensuring that only authorized personnel can view or manage sensitive documents, thereby enhancing security, efficiency, and accountability in administrative operations.
-                            </p>
+                            <p class="project-kicker">Business website</p>
+                            <h3 class="project-title">Tiga D Cuci-Cuci Services</h3>
+                            <p class="project-description">Designed and developed a website for Tiga D Cuci-Cuci Services, a professional cleaning company based in Melaka. The website presents the company’s cleaning services and packages, showcases completed work in a gallery, and allows customers to enquire or book a service slot online.</p>
+                            <details class="project-highlights">
+                                <summary>Project details</summary>
+                                <ul><li>Business website development</li><li>Online presence for Tiga D Cuci-Cuci Services</li></ul>
+                            </details>
                             <div class="project-tech-stack">
                                 <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
                                 <div class="project-tech-list">
@@ -224,23 +237,33 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Inventory Bakery Management -->
-                <div class="project-group">
+                <!-- Project 5: Hardware Deployment Coordination System -->
+                <div class="project-group" id="project-hardware-deployment">
                     <div class="project-header">
                         <div class="project-image">
-                            <img src="assets/img/portfolio/journey/workshop_system.jpg" alt="Inventory Bakery Management System">
+                            <a href="assets/img/portfolio/journey/hadecs_system.jpg" class="glightbox" aria-label="View Hardware Deployment Coordination System image">
+                                <img src="assets/img/portfolio/journey/hadecs_system.jpg" alt="Hardware Deployment Coordination System" loading="lazy" decoding="async">
+                            </a>
                         </div>
                         <div class="project-details">
-                            <h3 class="project-title">Inventory Bakery Management System</h3>
+                            <p class="project-kicker">Workshop II</p>
+                            <h3 class="project-title">Hardware Deployment Coordination System</h3>
                             <p class="project-description">
-                                A desktop application tailored for bakeries to manage their stock, sales, and ingredients efficiently. Built with C++ for high performance, this system allows for real-time tracking of inventory levels, automated alerts for low-stock items, and sales
-                                reporting. It helps bakery owners reduce waste, optimize purchasing, and make data-driven decisions to improve profitability and operational workflow.
+                                An internal coordination system designed to streamline hardware installation projects. Administrators can create and assign deployment tasks to various vendors for different sites. The system allows vendors to update task status in real-time, and administrators
+                                can monitor overall project progress. It improves communication, ensures accountability, and provides a clear overview of all deployment activities, leading to more efficient project completion and resource management.
                             </p>
+                            <details class="project-highlights">
+                                <summary>Key features</summary>
+                                <ul><li>Deployment task assignment by site</li><li>Vendor progress and status updates</li><li>Coordination through user acceptance testing</li></ul>
+                            </details>
                             <div class="project-tech-stack">
                                 <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
                                 <div class="project-tech-list">
-                                    <span class="tech-tag">C++</span>
+                                    <span class="tech-tag">PHP</span>
                                     <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
                                 </div>
                             </div>
                         </div>
@@ -251,9 +274,12 @@
                 <div class="project-group">
                     <div class="project-header">
                         <div class="project-image">
-                            <img src="assets/img/portfolio/journey/smart_system.jpg" alt="Smart Nenas Platform">
+                            <a href="assets/img/portfolio/journey/smart_system.jpg" class="glightbox" aria-label="View Smart Nenas Platform image">
+                                <img src="assets/img/portfolio/journey/smart_system.jpg" alt="Smart Nenas Platform" loading="lazy" decoding="async">
+                            </a>
                         </div>
                         <div class="project-details">
+                            <p class="project-kicker">Competition Service Learning Malaysia (SULAM) Project</p>
                             <h3 class="project-title">Smart Nenas Platform</h3>
                             <p class="project-description">
                                 A comprehensive web platform designed to support the pineapple industry, from farm to table. It integrates modules for farmer registration, pineapple trading, and sales management. The platform facilitates direct communication between farmers and buyers,
@@ -272,18 +298,84 @@
                     </div>
                 </div>
 
-                <!-- Project 5: Hardware Deployment Coordination System -->
+                <!-- Project 3: Inventory Bakery Management -->
                 <div class="project-group">
                     <div class="project-header">
                         <div class="project-image">
-                            <img src="assets/img/portfolio/journey/hadecs_system.jpg" alt="Hardware Deployment Coordination System">
+                            <a href="assets/img/portfolio/journey/workshop_system.jpg" class="glightbox" aria-label="View Inventory Bakery Management System image">
+                                <img src="assets/img/portfolio/journey/workshop_system.jpg" alt="Inventory Bakery Management System" loading="lazy" decoding="async">
+                            </a>
                         </div>
                         <div class="project-details">
-                            <h3 class="project-title">Hardware Deployment Coordination System</h3>
+                            <p class="project-kicker">Workshop I</p>
+                            <h3 class="project-title">Inventory Bakery Management System</h3>
                             <p class="project-description">
-                                An internal coordination system designed to streamline hardware installation projects. Administrators can create and assign deployment tasks to various vendors for different sites. The system allows vendors to update task status in real-time, and administrators
-                                can monitor overall project progress. It improves communication, ensures accountability, and provides a clear overview of all deployment activities, leading to more efficient project completion and resource management.
+                                A desktop application tailored for bakeries to manage their stock, sales, and ingredients efficiently. Built with C++ for high performance, this system allows for real-time tracking of inventory levels, automated alerts for low-stock items, and sales
+                                reporting. It helps bakery owners reduce waste, optimize purchasing, and make data-driven decisions to improve profitability and operational workflow.
                             </p>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">C++</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: PKK File Management -->
+                <div class="project-group" id="project-pkk-files">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <a href="assets/img/portfolio/journey/pkk_system.jpg" class="glightbox" aria-label="View PKK File Management System image">
+                                <img src="assets/img/portfolio/journey/pkk_system.jpg" alt="PKK File Management System" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-kicker">PKK System</p>
+                            <h3 class="project-title">PKK File Management System</h3>
+                            <p class="project-description">
+                                An internal system developed to digitize and manage the flow of incoming and outgoing official documents. This system replaces manual paper-based processes, allowing for secure uploading, tracking, and archiving of files. It features role-based access
+                                control, ensuring that only authorized personnel can view or manage sensitive documents, thereby enhancing security, efficiency, and accountability in administrative operations.
+                            </p>
+                            <details class="project-highlights">
+                                <summary>Key features</summary>
+                                <ul><li>Incoming and outgoing document organization</li><li>File upload, tracking, and archiving</li><li>Role-based access control</li></ul>
+                            </details>
+                            <div class="project-tech-stack">
+                                <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1: e-Li Inbound UTHM -->
+                <div class="project-group" id="project-eli-inbound">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <a href="assets/img/portfolio/journey/eli_system.jpg" class="glightbox" aria-label="View e-LI Inbound UTHM image">
+                                <img src="assets/img/portfolio/journey/eli_system.jpg" alt="e-LI Inbound UTHM System" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-kicker">Diploma final-year project</p>
+                            <h3 class="project-title">e-LI Inbound UTHM</h3>
+                            <p class="project-description">
+                                A comprehensive e-LI Inbound UTHM system designed for Universiti Tun Hussein Onn Malaysia (UTHM). This platform streamlines the entire process for external students seeking internships, from application and submission of required documents to tracking
+                                and approval by faculty. It provides a centralized portal for students to discover opportunities and for the university to manage placements efficiently, fostering a seamless connection between academia and industry.
+                            </p>
+                            <details class="project-highlights">
+                                <summary>Key features</summary>
+                                <ul><li>Industrial training application and document submission</li><li>Application and placement status tracking</li><li>Faculty review and approval workflow</li></ul>
+                            </details>
                             <div class="project-tech-stack">
                                 <h4><i class="bi bi-gear-fill"></i>Tools & Technologies</h4>
                                 <div class="project-tech-list">
