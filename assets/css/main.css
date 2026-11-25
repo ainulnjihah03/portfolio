@@ -4021,6 +4021,56 @@ summary:focus-visible {
     }
 }
 
+@media (max-width: 767.98px) {
+    .journey-group-tabs {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        margin: 0 -0.25rem 1.25rem;
+        padding: 0.2rem 0.25rem 0.65rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+    }
+
+    .journey-group-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .journey-group-tabs [role="tab"] {
+        flex: 0 0 auto;
+        max-width: 85vw;
+        scroll-snap-align: start;
+    }
+
+    #diploma-section .category-group > .journey-group-copy,
+    #internship-section .category-group > .journey-group-copy,
+    #degree-section .category-group > .journey-group-copy,
+    #awards-section .category-group > .journey-group-copy {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.2rem 1.1rem;
+    }
+
+    #diploma-section .journey-group-copy .category-description,
+    #internship-section .journey-group-copy .category-description,
+    #degree-section .journey-group-copy .category-description,
+    #awards-section .journey-group-copy .category-description {
+        font-size: 1rem;
+        line-height: 1.65;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+
+    #diploma-section .journey-group-copy .category-subtitle,
+    #internship-section .journey-group-copy .category-subtitle,
+    #degree-section .journey-group-copy .category-subtitle,
+    #awards-section .journey-group-copy .category-subtitle {
+        font-size: clamp(1.35rem, 6vw, 1.65rem);
+    }
+}
+
 @media (max-width: 575px) {
     #awards-section .category-group > .row,
     #awards-section .category-group > .row > .row {
@@ -4039,6 +4089,143 @@ summary:focus-visible {
 
     .section-title {
         padding-bottom: 2.25rem;
+    }
+}
+
+/* Final mobile layout tuning for Journey category pages. */
+@media (max-width: 575.98px) {
+    #portfolio.has-active-category .category-section > .container {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .journey-group-tabs {
+        gap: 0.5rem;
+        margin: 0 0 1rem;
+        padding: 0.2rem 0 0.55rem;
+        scroll-padding-inline: 0.25rem;
+    }
+
+    .journey-group-tabs [role="tab"] {
+        padding: 0.65rem 0.9rem;
+        font-size: 0.9rem;
+    }
+
+    #diploma-section .category-group.is-current,
+    #internship-section .category-group.is-current,
+    #degree-section .category-group.is-current,
+    #awards-section .category-group.is-current {
+        width: 100%;
+        row-gap: 1rem;
+    }
+
+    #diploma-section .category-group > .journey-group-copy,
+    #internship-section .category-group > .journey-group-copy,
+    #degree-section .category-group > .journey-group-copy,
+    #awards-section .category-group > .journey-group-copy {
+        padding: 1.25rem 1.15rem;
+        border-left-width: 3px;
+        border-radius: 1rem;
+    }
+
+    #diploma-section .journey-group-copy::before,
+    #internship-section .journey-group-copy::before,
+    #degree-section .journey-group-copy::before,
+    #awards-section .journey-group-copy::before {
+        margin-left: 0.05rem;
+    }
+
+    #diploma-section .journey-group-copy .category-description,
+    #internship-section .journey-group-copy .category-description,
+    #degree-section .journey-group-copy .category-description,
+    #awards-section .journey-group-copy .category-description {
+        text-align: left !important;
+        word-spacing: normal;
+        letter-spacing: normal;
+        line-height: 1.65;
+    }
+
+    #diploma-section .category-group.is-current > .row,
+    #internship-section .category-group.is-current > .row,
+    #degree-section .category-group.is-current > .row,
+    #awards-section .category-group.is-current > .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    #diploma-section .category-group.is-current > .row > .portfolio-item,
+    #internship-section .category-group.is-current > .row > .portfolio-item,
+    #degree-section .category-group.is-current > .row > .portfolio-item,
+    #awards-section .category-group.is-current > .row > .portfolio-item {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Mobile menu drawer and narrow Journey cards. */
+@media (max-width: 1199px) {
+    .mobile-nav-active .navmenu {
+        background: rgba(8, 5, 14, 0.68);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .mobile-nav-active .navmenu > ul {
+        inset: 0 0 0 auto;
+        width: min(86vw, 320px);
+        max-height: 100dvh;
+        padding: 5.25rem 1rem 1.5rem;
+        border: 1px solid rgba(187, 134, 252, 0.2);
+        border-right: 0;
+        border-radius: 1.25rem 0 0 1.25rem;
+        background: linear-gradient(160deg, #241833 0%, #171020 100%);
+        box-shadow: -18px 0 48px rgba(0, 0, 0, 0.35);
+    }
+
+    .mobile-nav-active .navmenu > ul > li > a {
+        min-height: 2.9rem;
+        margin-bottom: 0.3rem;
+        padding: 0.7rem 0.85rem;
+        border-radius: 0.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .mobile-nav-active .navmenu > ul > li > a:hover,
+    .mobile-nav-active .navmenu > ul > li > a.active {
+        background: rgba(168, 85, 247, 0.14);
+        color: #c084fc;
+    }
+
+    .mobile-nav-active .navmenu .dropdown > a i {
+        margin-left: 0.75rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #portfolio.has-active-category .category-section .journey-group-copy {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.25rem 1rem;
+    }
+
+    #portfolio.has-active-category .category-section .journey-group-copy .category-description {
+        margin: 0;
+        text-align: left !important;
+        text-justify: auto;
+        word-spacing: normal;
+        letter-spacing: normal;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+
+    #portfolio.has-active-category .category-section .journey-group-copy::before {
+        margin-left: 0.1rem;
     }
 }
 
